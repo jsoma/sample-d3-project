@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix graph.js",
     "parcel": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build src/index.html --out-dir docs --public-url /sample-d3-project"
   },
   "keywords": [],
   "author": "Jonathan Soma <jonathan.soma@gmail.com> (http://jonathansoma.com)",
