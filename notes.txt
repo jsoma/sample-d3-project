@@ -1,4 +1,30 @@
 
+absolute vs. relative paths
+
+
+<link rel="stylesheet" src="http://jonathansoma.com/style.css">
+Go to jonathansoma.com/style.css
+
+
+
+<link rel="stylesheet" src="style.css">
+Look for style.css in the current directory of the website
+    For example, if I'm at
+        jonathansoma.com/projects/
+    it will look for
+        jonathansoma.com/projects/style.css
+
+<link rel="stylesheet" src="/style.css">
+Look for style.css at the very top of the domain
+    For example, if I'm at
+        jonathansoma.com/projects/
+    it will look for
+        jonathansoma.com/style.css
+
+
+
+
+
 "hot module replacement"
 
 
