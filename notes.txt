@@ -1,0 +1,80 @@
+
+"hot module replacement"
+
+
+
+#### REQUIRING CSV FILES AND STUFF
+
+Before:
+
+    d3.csv('countries.csv')
+
+After:
+
+    d3.csv(require('./countries.csv')).then(ready)
+
+You need to add require() and ./
+
+
+
+
+#### JS EVENTS
+
+You're probably only interested in a few mouse events, but: https://developer.mozilla.org/en-US/docs/Web/Events
+
+
+#### WHEN FAT ARROWS FAIL US
+
+
+This ES4 function:
+
+    function (d) {
+      d3.select(this).attr('fill', 'red')
+    }
+
+Becomes this ES6 function:
+
+    (d) => (d, i, nodes) {
+      d3.select(nodes[i]).attr('fill', 'red')
+    }
+
+We can't use 'this' with fat arrows
+
+
+
+
+#### YOUR .gitignore FILE CONTENTS
+
+You can start from gitignore.io
+
+    # Custom files
+    .DS_Store
+    dist
+
+    # Optional npm cache directory
+    .npm
+
+    # Optional eslint cache
+    .eslintcache
+
+    # parcel-bundler cache
+    .cache
+
+    # Logs
+    logs
+    *.log
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
+
+    # Optional npm cache directory
+    .npm
+
+    # dotenv environment variables file
+    .env
+
+    # Optional eslint cache
+    .eslintcache
+
+    # Dependency directories
+    node_modules/

@@ -1,0 +1,30 @@
+{
+  "name": "classwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix graph.js",
+    "parcel": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Jonathan Soma <jonathan.soma@gmail.com> (http://jonathansoma.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "d3": "^5.7.0",
+    "parcel": "^1.9.7"
+  }
+}

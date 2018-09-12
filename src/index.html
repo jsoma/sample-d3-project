@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      .axis line, .axis path {
+        stroke-width: 0.5;
+        stroke: #999;
+      }
+    </style>
+  </head>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Events in D3</h1>
+
+      <p class="alert alert-warning small">You'll need to run a <strong>local web server</strong> to make this work. Start with <code>python</code>, then we'll move to <code>parcel</code>.</p>
+      <p>This page also exists with <a href="solo.html">just the graphic</a></p>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-3">
+      <p>
+        Maybe we are just interested in 
+        Africa,
+        Asia, or
+        S. America
+      </p>
+      <div id="info" style="display: none">
+        <p><strong id="name"></strong> has a life expectancy of <strong id="life"></strong> and a per-capita GDP of <strong id="GDP"></strong></p>
+      </div>
+    </div>
+    <div class="col-9">
+      <div id="chart"></div>
+    </div>
+  </div>
+
+  <!-- Now we include our actual visualization -->
+  <script src="graph.js"></script>
+</div>
+</body>
+</html>

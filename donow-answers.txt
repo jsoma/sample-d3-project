@@ -1,0 +1,93 @@
+Do Now
+Wednesday, September 12, 2018
+
+Reviewing: JavaScript stuff, mostly
+
+1) What is JavaScript called when it’s run from the command line?
+
+node, node.js
+
+2) What is the file called that contains all of the information about your project?
+
+package.json
+
+
+3) What is the name of the folder that npm installs packages into?
+
+node_modules
+
+4) What is the process of cleaning up your code called? What tools do we use for that?
+
+linting
+eslint + prettier
+
+5) Name 2 of the things a build system might do.
+
+transpiling - convert new js to old js so it can run on old browsers
+bundling - putting together many js files into one js file
+minification - make files smaller by renaming variables, removing whitespace
+tree shaking - removes unused functions and other stuff
+
+
+
+6) Name 3 build systems. Which one do we use?
+
+parcel - easy, no configuration
+webpack - horrifying, terrible config, very popular
+grunt - used to be popular
+gulp - used to be popular
+bower
+
+
+
+
+7) What does a “fat arrow” refer to?
+
+function (d) {
+  console.log('blah blah')
+}
+
+(d) => {
+  console.log('blah blah')
+}
+
+d => console.log('blah blah')
+
+8) What is the python command to run a server?
+
+python -m http.server
+
+9) What is wrong with the following code?
+
+var xPositionScale = d3
+  .scaleLinear()
+  .domain([0,10])
+  .range([0,100])
+
+
+10) What is programmatically wrong with the following code?
+
+svg.selectAll(“circle”)
+  .data(datapoints)
+  .enter().append(“circle”)
+  .attr(“cx”, function(d) {
+    return xPositionScale(d.age)
+  })
+
+
+11) JavaScript version 6 came out in 2015. What two names do people refer to it as? 
+
+ES6
+ES2015
+ECMAScript
+
+java => javascript
+car => carpet
+
+
+12) Why don’t you like that one build system that I always make you say you hate? Why is the build system we’re using better?
+
+configuration is just terrible, too many ways to do things, so many plugins, ack, agh, ugh, it's horrible. i hate webpack. we use parcel because you don't have to do anything
+
+
+
